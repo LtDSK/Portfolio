@@ -1,0 +1,77 @@
+body{
+    background-color: black;
+    color: white;
+}
+
+
+/* Google Font */
+.kaushan-script-regular {
+  font-family: "Kaushan Script", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h1{
+    font-family:"Kaushan Script", cursive;
+    text-align: center; 
+    font-size: 15rem;  
+    background: linear-gradient(270deg, red, rgba(21, 21, 241, 0.918), purple, rgb(198, 17, 47));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+    background-size: 800% 800%;
+    animation: gradientMove 10s ease infinite;
+}
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+nav{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+nav ul{
+    font-family: "Kaushan Script", cursive;
+    display: flex;
+    text-decoration: none;
+    justify-content: center;
+    border: px solid rgb(255, 255, 255);
+    width: fit-content;
+    margin: 50px auto;
+    padding: 15px;
+    gap: 60px;
+    border-radius: 50px;
+     background: rgba(255, 255, 255, 0.1); 
+    backdrop-filter: blur(10px);    
+    -webkit-backdrop-filter: blur(10px);
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    transition: transform 0.25s ease, text-shadow 0.25s ease;
+}
+nav ul li a:hover{
+    transform: translateY(-5px);
+    text-shadow: 0 0 8px #fff, 0 0 12px #fff;
+}
+
+#Project {
+    display: flex;
+    justify-content: center;
+
+}
+h3{
+   font-family: "Kaushan Script", cursive;
+   
+}
