@@ -1,10 +1,44 @@
+/* For tablets and mobile screens */
+@media (max-width: 768px) {
+
+    h1 {
+        font-size: 4rem;
+    }
+
+    nav ul {
+        gap: 15px;
+        padding: 10px;
+        margin: 20px auto;
+        flex-wrap: wrap;
+    }
+
+    #Project {
+        flex-direction: column;
+    }
+
+    .skills-container {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    #Achievements ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    h3 {
+        font-size: 3rem !important;
+    }
+}
+
+
+
 body{
     background-color: black;
     color: white;
 }
 
-
-/* Google Font */
 .kaushan-script-regular {
   font-family: "Kaushan Script", cursive;
   font-weight: 400;
@@ -14,7 +48,7 @@ body{
 h1{
     font-family:"Kaushan Script", cursive;
     text-align: center; 
-    font-size: 15rem;  
+    font-size: 10rem;  
     background: linear-gradient(270deg, red, rgba(21, 21, 241, 0.918), purple, rgb(198, 17, 47));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -59,7 +93,7 @@ nav ul{
 nav ul li a{
     color: white;
     text-decoration: none;
-    transition: transform 0.25s ease, text-shadow 0.25s ease;
+    transition: transform 0.20s ease, text-shadow 0.25s ease;
 }
 nav ul li a:hover{
     transform: translateY(-5px);
@@ -68,10 +102,143 @@ nav ul li a:hover{
 
 #Project {
     display: flex;
-    justify-content: center;
-
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
 }
+
+#Project div{
+  flex: 1;
+}
+
+.skills-container{
+  display: flex;
+  justify-content: center;
+  gap: 200px;
+}
+
+#Achievements ul{
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
 h3{
    font-family: "Kaushan Script", cursive;
-   
+   color: rgba(255, 1, 230, 0.849);
+}
+
+/* For all devices */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 15px;
+}
+
+/* Project section */
+#Project {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+#Project div {
+    flex: 1 1 250px;
+    min-width: 0;
+}
+
+/* Skills section */
+.skills-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+/* Achievements section */
+#Achievements ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 0;
+}
+
+/* Navigation */
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+/* Large tablets and small laptops */
+@media (max-width: 1024px) {
+    h1 {
+        font-size: 7rem;
+    }
+
+    nav ul {
+        gap: 20px;
+    }
+}
+
+/* Tablets */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 5rem;
+    }
+
+    nav ul {
+        gap: 15px;
+        margin: 20px auto;
+    }
+
+    #Project {
+        flex-direction: column;
+    }
+
+    h3 {
+        font-size: 3rem !important;
+    }
+}
+
+/* Mobile phones */
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    nav ul {
+        gap: 10px;
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    #Project {
+        gap: 15px;
+    }
+
+    .skills-container {
+        gap: 15px;
+    }
+
+    #Achievements ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    h3 {
+        font-size: 2.5rem !important;
+    }
 }
